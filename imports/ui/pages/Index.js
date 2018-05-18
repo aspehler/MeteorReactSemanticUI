@@ -1,8 +1,21 @@
 import React, { Fragment } from 'react';
-import { Header } from 'semantic-ui-react'
+import { Header, Button } from 'semantic-ui-react'
 
-const Index = () => (
-  <Header as='h1'>Home</Header>
-);
+class Index extends React.Component {
+  handleButtonAPI() {
+    HTTP.get('https://jsonplaceholder.typicode.com/posts?userId=1', (error, result) => {
+      console.log(result)
+    });
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Header as='h1'>Home</Header>
+        <Button onClick={this.handleButtonAPI}>API Test</Button>
+      </Fragment>
+    )
+  }
+}
 
 export default Index;
