@@ -18,8 +18,8 @@ class App extends React.Component {
           <Container>
             <Switch>
               <Route exact name="index" path="/" component={Index} />
-              <Route name="click" path="/click" component={APIButton} />
-              <Route name="url" path="/url/:id" component={APIUrl} />
+              <Route name="apibutton" path="/apibutton" component={APIButton} />
+              <Route name="apiurl" path="/apiurl/:id" component={APIUrl} />
             </Switch>
           </Container>
         </Fragment>

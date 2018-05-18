@@ -17,18 +17,18 @@ const Header = () => {
         Index
       </Menu.Item>
       <Menu.Item
-        name='click'
+        name='apibutton'
         as={NavLink}
-        to='/click'
+        to='/apibutton'
       >
-        Click
+        API Button
       </Menu.Item>
       <Menu.Item
-        name='url'
+        name='apiurl'
         as={NavLink}
-        to='/url/1'
+        to='/apiurl/1'
       >
-        Url
+        API Url
       </Menu.Item>
     </Menu>
   )
