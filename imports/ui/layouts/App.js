@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 
 import Index from '../pages/Index';
-import Other from '../pages/Other';
+import APIButton from '../pages/api/APIButton';
+import APIUrl from '../pages/api/APIUrl';
 import Header from '../components/Header'
 
 class App extends React.Component {
@@ -17,7 +18,8 @@ class App extends React.Component {
           <Container>
             <Switch>
               <Route exact name="index" path="/" component={Index} />
-              <Route name="other" path="/other" component={Other} />
+              <Route name="click" path="/click" component={APIButton} />
+              <Route name="url" path="/url/:id" component={APIUrl} />
             </Switch>
           </Container>
         </Fragment>

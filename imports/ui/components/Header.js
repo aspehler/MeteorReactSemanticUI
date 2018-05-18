@@ -10,18 +10,25 @@ const Header = () => {
       </Menu.Item>
       <Menu.Item
         exact
-        name='home'
+        name='index'
         as={NavLink}
         to='/'
       >
-        Home
+        Index
       </Menu.Item>
       <Menu.Item
-        name='other'
+        name='click'
         as={NavLink}
-        to='/other'
+        to='/click'
       >
-        Other
+        Click
+      </Menu.Item>
+      <Menu.Item
+        name='url'
+        as={NavLink}
+        to='/url/1'
+      >
+        Url
       </Menu.Item>
     </Menu>
   )
