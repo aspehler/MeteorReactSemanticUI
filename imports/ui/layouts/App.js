@@ -1,13 +1,12 @@
-import React, { Fragment } from 'react'
-import { Container } from 'semantic-ui-react'
+import React, { Fragment } from 'react';
+import { Container } from 'semantic-ui-react';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Meteor } from 'meteor/meteor';
 
 import Index from '../pages/Index';
 import APIButton from '../pages/api/APIButton';
 import APIUrl from '../pages/api/APIUrl';
-import Header from '../components/Header'
+import Header from '../components/Header';
 
 class App extends React.Component {
   render() {
